@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #414141; color:aliceblue;">
+    <h2>AI boltey </h2>
+    <div>
+        <ul id="images">
+            <li> <img width="200px" id="ai1" src="ai.jpg" alt="photoshop"></li>
+            <li> <img width="200px" id="ai2" src="ai2.jpg" alt="photoshop"></li>
+            <li> <img width="200px" id="ai3" src="ai3.avif" alt="photoshop"></li>
+            <li> <img width="200px" id="ai4" src="ai4.jpeg" alt="photoshop"></li>
+            <li> <a  style="color: aliceblue;" id="google"  href="https://google.com">Google</a></li>
+      
+        </ul>
+    </div>
+    
+</body>
+<script>
+    // document.getElementById("ai1").onclick= function(){
+    //     alert('Hello AI Boltey');
+    // }
+
+    // document.getElementById('images').addEventListener('click',function(e){
+    //     console.log("Clicked inside the ul ");
+        
+    // },false)
+    // //type,timestamp,defaultPrevented,
+    // //target,toElement,srcElement,currentTArget,
+    // //clientx,clienty,screenX,screenY
+    // //altKey ,ctrlKey ,shiftKey,keyCode
+    // //attachEvent()
+    
+    
+    // document.getElementById('ai2').addEventListener('click',function(e){
+    //     console.log("Ai clicked ");
+    //     e.stopPropagation();
+        
+    // },false)
+
+    // document.getElementById('google').addEventListener('click',function(e){
+    //     e.preventDefault();
+    //     e.stopPropagation()
+    //     console.log("googleClicked")
+        
+    // })
+
+    document.querySelector('#images').addEventListener('click',function(e){
+        console.log(e.target.tagName);
+
+        if(e.target.tagName === 'IMG'){
+            console.log(e.target.id)
+             let removeIt=e.target.parentNode
+        removeIt.remove()
+
+        }
+        
+       
+        // removeIt.parentNode.removeChild(removeIt)
+    })
+    
+
+</script>
+</html>
