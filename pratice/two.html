@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> Shaikh Mumsad Ahmed  </h2>
+    <button id="stop" > Rukja </button>
+</body>
+<script>
+// setTimeout(function(){
+// console.log("Shaikh Mumsad ahmed");
+// },2000)
+
+setInterval(() => {
+     console.log("kay bolty te bachhi ")
+     console.log("")
+}, 1000);
+
+const mumsad = function(){
+    console.log("cyber botey");
+}
+
+const Shaikh  = function(){
+    document.querySelector('h2').innerHTML=" Rawas js series "
+    
+}
+const changeMe = setTimeout(Shaikh,2000)
+
+
+
+document.querySelector('#stop').addEventListener('click',function(){
+    clearTimeout(changeMe)
+    console.log("shaikh")
+})
+// setInterval(mumsad,3000)
+</script>
+</html>
